@@ -24,3 +24,14 @@ TENSOR = torch.tensor([[[1, 2, 3],
 scalar.ndim # shows how many elements includes the scope. In this case - 0
 matrix.shape # shows what are the columns and rows if it's matrix, if it's TENSOR with more elemtns,
 # then add more information => matrix - torch.size([3, 2]), TENSOR - torch.size([1, 3, 3])
+
+
+# Random tensors
+# Why random tensors>
+#
+# Random tensors are important becaause the way many neural networks learn is that they start with tensors full of
+# random numbers and then adjust those random numbers to better represent the data.
+
+# Create a random tensor of size/shape (3, 4)
+random_tensor = torch.rand(3, 4)
+random_tensor
