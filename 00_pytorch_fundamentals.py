@@ -35,3 +35,7 @@ matrix.shape # shows what are the columns and rows if it's matrix, if it's TENSO
 # Create a random tensor of size/shape (3, 4)
 random_tensor = torch.rand(3, 4)
 random_tensor
+
+# Create a random tensor with similar shape to an image tensor
+random_image_size_tensor = torch.rand(size=(224, 224, 3)) # height, width, colour channels
+random_image_size_tensor.shape, random_image_size_tensor.ndim
