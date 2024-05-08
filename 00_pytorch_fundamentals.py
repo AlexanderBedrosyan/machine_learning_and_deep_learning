@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# ====================================================================================================
 # Introduction to Tensors
 # Creating tensors
 # PyTorch tensors are created using torch.Tensor() - https://pytorch.org/docs/stable/tensors.html
@@ -25,9 +26,9 @@ scalar.ndim # shows how many elements includes the scope. In this case - 0
 matrix.shape # shows what are the columns and rows if it's matrix, if it's TENSOR with more elemtns,
 # then add more information => matrix - torch.size([3, 2]), TENSOR - torch.size([1, 3, 3])
 
-
+# ====================================================================================================
 # Random tensors
-# Why random tensors>
+# Why random tensors?
 #
 # Random tensors are important becaause the way many neural networks learn is that they start with tensors full of
 # random numbers and then adjust those random numbers to better represent the data.
