@@ -30,7 +30,7 @@ matrix.shape # shows what are the columns and rows if it's matrix, if it's TENSO
 # Random tensors
 # Why random tensors?
 #
-# Random tensors are important becaause the way many neural networks learn is that they start with tensors full of
+# Random tensors are important because the way many neural networks learn is that they start with tensors full of
 # random numbers and then adjust those random numbers to better represent the data.
 
 # Create a random tensor of size/shape (3, 4)
