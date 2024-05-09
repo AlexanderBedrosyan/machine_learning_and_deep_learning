@@ -40,3 +40,9 @@ random_tensor
 # Create a random tensor with similar shape to an image tensor
 random_image_size_tensor = torch.rand(size=(224, 224, 3)) # height, width, colour channels
 random_image_size_tensor.shape, random_image_size_tensor.ndim
+
+# Zeros and ones
+
+# Create a tensor of all zeros
+zeros = torch.zeros(size=(3, 4))
+zeros
