@@ -49,3 +49,13 @@ ones = torch.ones(size=(3, 4))
 
 # Type of tensor
 torch.dtype
+
+# Creating a range of tensors and tensors-like
+
+# Use torch.range()
+torch.arange(start=0, end=10, step=2)
+
+# Creating tensors like
+one_to_ten = torch.arange(start=1, end=11, step=1)
+ten_zeros = torch.zeros_like(input=one_to_ten)
+ten_zeros
