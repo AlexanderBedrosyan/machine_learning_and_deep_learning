@@ -58,4 +58,19 @@ torch.arange(start=0, end=10, step=2)
 # Creating tensors like
 one_to_ten = torch.arange(start=1, end=11, step=1)
 ten_zeros = torch.zeros_like(input=one_to_ten)
-ten_zeros
+
+# Tensor datatypes
+# Note: The most common errors which we receive into with PyTorch and Deep Learing:
+#
+# Tensors not right datatype
+# Tensors not right shape
+# Tensors not on the right device
+
+float_32_tensor = torch.tensor([3.0, 6.0, 9.0],
+                              dtype=None, # what datatype is the tensor(e.g. float32 or float16)
+                               device=None, # What device is your tensor on (CPU/CUDA, etc)
+                               requires_grad=False) # Whether or not to track gradients with this tensors operations
+
+float_32_tensor.dtype
+float_16_tensor = float_32_tensor.type(torch.float16)
+float_16_tensor
