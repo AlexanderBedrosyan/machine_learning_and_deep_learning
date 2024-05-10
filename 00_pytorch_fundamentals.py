@@ -50,6 +50,7 @@ ones = torch.ones(size=(3, 4))
 # Type of tensor
 torch.dtype
 
+# ====================================================================================================
 # Creating a range of tensors and tensors-like
 
 # Use torch.range()
@@ -59,6 +60,7 @@ torch.arange(start=0, end=10, step=2)
 one_to_ten = torch.arange(start=1, end=11, step=1)
 ten_zeros = torch.zeros_like(input=one_to_ten)
 
+# ====================================================================================================
 # Tensor datatypes
 # Note: The most common errors which we receive into with PyTorch and Deep Learing:
 #
@@ -74,3 +76,17 @@ float_32_tensor = torch.tensor([3.0, 6.0, 9.0],
 float_32_tensor.dtype
 float_16_tensor = float_32_tensor.type(torch.float16)
 float_16_tensor
+
+# ====================================================================================================
+# Getting information from tensors (Tensor attributes)
+# For datatype - use tensor.dtype
+# For shape - use tensor.shape
+# For device - use tensor.device
+
+some_tensor = torch.rand(3, 4)
+some_tensor
+
+print(some_tensor)
+print(f"Datatype: {some_tensor.dtype}")
+print(f"Shape: {some_tensor.shape}")
+print(f"Device tensor is on: {some_tensor.device}")
